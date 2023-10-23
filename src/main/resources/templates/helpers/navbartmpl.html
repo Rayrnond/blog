@@ -1,0 +1,91 @@
+<!--
+  ~  © 2023 Raymond Pattend & Narro LLC. All rights reserved.
+  -->
+
+<!--
+  ~  © 2023 Raymond Pattend & Narro LLC. All rights reserved.
+  -->
+
+<!--
+  ~  © 2023 Raymond Pattend & Narro LLC. All rights reserved.
+  -->
+
+<!--
+  ~  © 2023 Raymond Pattend & Narro LLC. All rights reserved.
+  -->
+
+<!--
+  ~  © 2023 Raymond Pattend & Narro LLC. All rights reserved.
+  -->
+
+<!--
+  © 2023 Raymond Pattend & Narro LLC. All rights reserved.
+-->
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<nav th:fragment="navbar()" class="bg-white sticky top-0 z-50">
+    <div class="px-4 sm:px-6 lg:px-8">
+        <div class="flex h-20 items-center justify-between">
+            <div class="flex items-center w-full">
+                <div class="flex-shrink-0">
+                    <a href="/">
+                        <img alt="Logo for RaymondPattend.com" src="/public/images/logo.svg" class="inline-block h-32 w-32 rounded-md">
+                    </a>
+                </div>
+
+                <div class="hidden md:block mx-auto sm:px-6 lg:px-8">
+                    <div class="ml-10 flex items-baseline space-x-4 justify-center items-center">
+                        <a href="#" class="rounded-md px-3 py-2 text-sm font-bold transition text-gray-900 hover:bg-black hover:text-white">Blog</a>
+                        <a href="#" class="rounded-md px-3 py-2 text-sm font-bold transition text-gray-900 hover:bg-black hover:text-white">Photos</a>
+                        <a href="#" class="rounded-md px-3 py-2 text-sm font-bold transition text-gray-900 hover:bg-black hover:text-white">Code Snippets</a>
+                        <a href="#" class="rounded-md px-3 py-2 text-sm font-bold transition text-gray-900 hover:bg-black hover:text-white">Contact</a>
+                    </div>
+                </div><div class="flex-1 text-right lg:block md:block hidden w-full">
+                <div class="flex text-right items-right justify-end">
+
+                    <div class="flex hover:bg-black hover:text-white hover:fill-white transition px-2 rounded-lg text-gray-900">
+                        <a href="#" class="rounded-md px-1 py-2 text-sm font-bold transition">English</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" class="my-2.5 transition rotate"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg>
+                    </div>
+
+                </div>
+            </div>
+
+            </div>
+
+            <div class="-mr-2 flex md:hidden">
+                <button type="button" id="mobile-menu-main" onclick="runnavbarcheck()" aria-controls="mobile-menu" aria-expanded="false" class="relative inline-flex items-center justify-center rounded-md bg-black p-2 hover:opacity-70 transition">
+                    <span class="absolute -inset-0.5"></span>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" id="mobile-menu-closebtn" class="h-6 w-6 transition fill-white hidden rotate-180"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" id="mobile-menu-openbtn" class="h-6 w-6 transition rotate fill-white"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg>
+                </button>
+                <script>
+
+                    function runnavbarcheck() {
+                        const openbtn = document.getElementById("mobile-menu-openbtn");
+                        const closebtn = document.getElementById("mobile-menu-closebtn");
+                        const menu = document.getElementById("mobile-menu");
+                        if (menu.classList.contains("hidden")) {
+                            menu.classList.remove("hidden");
+                            openbtn.classList.add("hidden");
+                            closebtn.classList.remove("hidden");
+                        } else {
+                            menu.classList.add("hidden");
+                            openbtn.classList.remove("hidden");
+                            closebtn.classList.add("hidden");
+                        }
+                    }
+
+                </script>
+            </div>
+        </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden">
+        <div class="space-y-1 px-2 pb-3 pt-2 sm:px-3">
+            <a href="#" class="text-gray-900 hover:bg-black hover:text-white block rounded-md px-3 py-2 text-base font-medium max-w-xl">Blog</a><a href="#" class="text-gray-900 hover:bg-black hover:text-white block rounded-md px-3 py-2 text-base font-medium max-w-xl">Photos</a><a href="#" class="text-gray-900 hover:bg-black hover:text-white block rounded-md px-3 py-2 text-base font-medium max-w-xl">Code Snippets</a><a href="#" class="text-gray-900 hover:bg-black hover:text-white block rounded-md px-3 py-2 text-base font-medium max-w-xl">Contact</a>
+        </div>
+
+        <p class="text-gray-900/50 rounded-md px-5 py-4 text-xs font-medium max-w-xl">Visit on desktop to change your language.</p></div>
+</nav>
+</html>
