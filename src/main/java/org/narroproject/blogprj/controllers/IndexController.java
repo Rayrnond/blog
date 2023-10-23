@@ -2,10 +2,6 @@
  *  © 2023 Raymond Pattend & Narro LLC. All rights reserved.
  */
 
-/*
- *  © 2023 Raymond Pattend & Narro LLC. All rights reserved.
- */
-
 package org.narroproject.blogprj.controllers;
 
 import org.springframework.stereotype.Controller;
