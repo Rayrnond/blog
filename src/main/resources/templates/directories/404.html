@@ -1,0 +1,23 @@
+<!--
+  ~  © 2023 Raymond Pattend & Narro LLC. All rights reserved.
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head th:insert="~{/helpers/headertmpl.html :: header()}"></head>
+<body>
+<nav th:replace="~{/helpers/navbartmpl.html :: navbar(0)}"></nav>
+
+<article class="bg-white mx-4 h-[18rem]">
+    <header class="flex flex-col bg-white max-w-2xl mx-auto mt-10 mx-auto h-full">
+        <h1 class="mt-6 text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl mx-auto" th:text="#{error.title}"></h1>
+        <time datetime="2022-09-05" class="order-first flex items-center text-base text-zinc-400 dark:text-zinc-500 mx-auto">
+            <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
+            <span class="ml-3" th:text="#{error.subtitle}">That page could not be found.</span>
+        </time>
+    </header>
+</article>
+
+<nav th:replace="~{/helpers/footertmpl.html :: footer()}"></nav>
+</body>
+</html>

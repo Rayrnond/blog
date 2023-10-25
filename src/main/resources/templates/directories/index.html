@@ -1,0 +1,82 @@
+<!--
+  ~  © 2023 Raymond Pattend & Narro LLC. All rights reserved.
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head th:insert="~{/helpers/headertmpl.html :: header()}"></head>
+<body>
+<nav th:replace="~{/helpers/navbartmpl.html :: navbar(0)}"></nav>
+
+<div class="mx-auto mt-10 max-w-7xl px-4">
+    <div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <article class="flex max-w-lg flex-col items-start justify-between bg-gray-300/40 rounded-md">
+
+
+
+            <img src="https://cdn.raymondpattend.com/IMG_1590.png" class="group relative p-0 rounded-t-md bg-none bg-center rounded-t-md"><div class="group relative h-36 pb-8 px-8 pt-4">
+            <div class="flex items-center gap-x-4 text-sm">
+                <time datetime="2020-03-16" class="text-gray-500 text-xs font-bold">TUTORIAL</time>
+
+            </div><h3 class="text-3xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600 mt-1">
+            <a>
+                <span class="absolute inset-0"></span>
+                Boost your conversion rate
+            </a>
+        </h3>
+
+            <div class="flex items-center gap-x-4 text-sm mt-2">
+                <time datetime="2020-03-16" class="text-gray-500">Oct 23, 2023</time>
+
+            </div></div></article>
+
+        <!-- More posts... -->
+    </div>
+
+    <!-- More posts... -->
+</div>
+
+<article class="bg-white mx-4">
+    <header class="flex flex-col bg-white max-w-2xl mx-auto mt-10">
+        <h1 class="mt-6 text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl">Crafting a design system for a multiplanetary future</h1>
+        <time datetime="2022-09-05" class="order-first flex items-center text-base text-zinc-400 dark:text-zinc-500">
+            <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
+            <span class="ml-3">October 23, 2023</span>
+        </time>
+    </header>
+    <div data-mdx-content="true" class="mt-8 max-w-4xl mx-auto">
+        <p>
+            Today, Apple is bringing more choice to iPad users with a new, more affordable Apple Pencil. With pixel-perfect accuracy, low latency, and tilt sensitivity, the new Apple Pencil is ideal for note taking, sketching, annotating, journaling, and more. Designed with a matte finish and a flat side that magnetically attaches to the side of iPad for storage, the new Apple Pencil pairs and charges with a USB-C cable. The new Apple Pencil will be available beginning in early November.
+            <br>
+            <br>
+            “Apple Pencil has revolutionized note taking, sketching, and illustrating, unleashing endless possibilities for productivity and creativity,” said Bob Borchers, Apple’s vice president of Worldwide Product Marketing. “Combined with the versatility of iPad, the new Apple Pencil unlocks another great option to experience the magic of digital handwriting, annotation, marking up documents, and more.”
+        </p>
+        <img alt="" width="1310" height="872" decoding="async" data-nimg="1" style="color: transparent;" src="https://www.apple.com/newsroom/images/2023/10/apple-introduces-new-apple-pencil-bringing-more-value-and-choice-to-the-lineup/article/Apple-Pencil-USB-C_big.jpg.large_2x.jpg" class="my-4 rounded-lg">
+        <p>
+            Today, Apple is bringing more choice to iPad users with a new, more affordable Apple Pencil. With pixel-perfect accuracy, low latency, and tilt sensitivity, the new Apple Pencil is ideal for note taking, sketching, annotating, journaling, and more. Designed with a matte finish and a flat side that magnetically attaches to the side of iPad for storage, the new Apple Pencil pairs and charges with a USB-C cable. The new Apple Pencil will be available beginning in early November.
+            <br>
+            <br>
+            “Apple Pencil has revolutionized note taking, sketching, and illustrating, unleashing endless possibilities for productivity and creativity,” said Bob Borchers, Apple’s vice president of Worldwide Product Marketing. “Combined with the versatility of iPad, the new Apple Pencil unlocks another great option to experience the magic of digital handwriting, annotation, marking up documents, and more.”
+        </p>
+    </div>
+    <div data-mdx-content="true" class="my-8 p-8 max-w-2xl mx-auto bg-gray-100/50 p-4 rounded-lg">
+        <div class="group relative flex gap-x-3 rounded-lg">
+            <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-200">
+                <svg
+                        xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" class="h-6 w-6 text-gray-600">
+                    <path d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z"></path>
+                </svg>
+            </div>
+            <div>
+                <a href="#" class="font-semibold text-gray-900">
+                    Translation Available
+                    <span class="absolute inset-0"></span>
+                </a>
+                <p class="text-gray-600">Read in Deutsch.</p>
+            </div>
+        </div>
+    </div>
+</article>
+<nav th:replace="~{/helpers/footertmpl.html :: footer()}"></nav>
+</body>
+</html>
