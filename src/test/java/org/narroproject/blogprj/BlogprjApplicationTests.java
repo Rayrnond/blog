@@ -1,21 +1,5 @@
 /*
- *  © 2023 Raymond Pattend & Narro LLC. All rights reserved.
- */
-
-/*
- *  © 2023 Raymond Pattend & Narro LLC. All rights reserved.
- */
-
-/*
- *  © 2023 Raymond Pattend & Narro LLC. All rights reserved.
- */
-
-/*
- *  © 2023 Raymond Pattend & Narro LLC. All rights reserved.
- */
-
-/*
- *  © 2023 Raymond Pattend & Narro LLC. All rights reserved.
+ *  Copyright 2023 Raymond Pattend & Narro LLC. All rights reserved.
  */
 
 package org.narroproject.blogprj;
