@@ -15,13 +15,6 @@ import java.util.Date;
 @AllArgsConstructor@Builder@Setter@Getter
 public class BMetaData {
 
-    //"metadata" {
-    //		"title": "",
-    //		"subtitle": "",
-    //		"thumbnail": "",
-    //		"timestamp": 1234567890,
-    //	}
-
     private String title;
     private String subtitle;
     private String thumbnail;
