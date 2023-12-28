@@ -34,3 +34,4 @@ build/
 /HELP.md
 /mvnw
 /mvnw.cmd
+/src/main/resources/private/

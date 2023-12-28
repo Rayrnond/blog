@@ -25,5 +25,6 @@ public class BlogMarkdown {
     private BMetaData metadata;
     private BContent[] content;
     private BNote note;
+    private String jwk="";
 
 }

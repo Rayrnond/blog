@@ -12,7 +12,7 @@ public class DirectoryController {
 
     @GetMapping("/")
     public String getIndex() {
-        return "/directories/contact";
+        return "/directories/index";
     }
 
     @GetMapping("/code")

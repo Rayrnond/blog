@@ -11,6 +11,7 @@ import lombok.Setter;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 
 @AllArgsConstructor@Builder@Setter@Getter
 public class BMetaData {
@@ -21,8 +22,8 @@ public class BMetaData {
     private boolean available;
     private long timestamp;
 
-    public String getNiceDate() {
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MMMMM dd, yyyy");
+    public String getNiceDate(Locale locale) {
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MMMMM dd, yyyy", locale);
         return simpleDateFormat.format(new Date(timestamp));
     }
 

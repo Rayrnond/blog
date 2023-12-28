@@ -1,0 +1,181 @@
+{
+  "metadata": {
+    "title": "Trifecta",
+    "subtitle": "LEARN",
+    "thumbnail": "https://cdn.raymondpattend.com/blog-thumbnails/IMG_27491.png",
+    "timestamp": 1704085200000,
+    "public": true
+  },
+  "content": [
+    {
+      "type": "PARAGRAPH",
+      "raw": "I recently tried to get into 3D animation through Spline. Although the experience was decent, I experienced my 14\" M1 Pro MacBook Pro struggling under the pressure; fans on, battery draining, and constant crashes. It's not limited to Spline either; AI training is severely limited on a laptop."
+    },
+    {
+      "type": "PARAGRAPH",
+      "raw": "The solution? A dedicated build for AI, and 3D Design."
+    },
+    {
+      "type": "H2",
+      "raw": "I. macIntosh"
+    },
+    {
+      "type": "PARAGRAPH",
+      "raw": "Hi macIntosh. macIntosh is my first real power-computer. This computer was a replacement to my previous M1 MacBook Air, and although that computer was good enough at the time, the thermal capability (e.g. no fan) strained performance under high loads. It definitely isn't capable of AI training and had terrible battery life. The replacement was this (current) MacBook:"
+    },
+    {
+      "type": "PARAGRAPH",
+      "raw": "- 2021 14\" MacBook Pro"
+    },
+    {
+      "type": "PARAGRAPH",
+      "raw": "- M1 Pro 12c CPU / 14c GPU"
+    },
+    {
+      "type": "PARAGRAPH",
+      "raw": "- 32GB DDR5 Memory"
+    },
+    {
+      "type": "PARAGRAPH",
+      "raw": "- 1TB SSD"
+    },
+    {
+      "type": "SPACER",
+        "raw": ""
+    },
+    {
+      "type": "PARAGRAPH",
+      "raw": "Overkill, yes? I think not. The retail price was $3199, excluding AppleCare+. This computer is an amazing device capable of most things one would need. I've never hit the memory limit or thermally crashed the computer yet, but it definitely cannot handle high-intensive AI training or running simple base models like LLAMA-2B. It can run a model like LLAMA-2B, but the realistic performance it provides is to the likes of 1 token per 10s, completely unreasonable."
+    },
+    {
+      "type": "PARAGRAPH",
+      "raw": "Plus, back when I purchased this computer, I didn't need to train AI or mess with graphical design. I was paying over $299 a month on a dedicated VPS (Virtual Private Server). A VPS is a digital server rented by providers like Amazon Web Services or Azure where you can run processes like a website. $299/mo. seems expensive, but it hosted everything I needed to develop software."
+    },
+    {
+      "type": "H2",
+      "raw": "II. homeBase"
+    },
+    {
+      "type": "PARAGRAPH",
+      "raw": "Introducing homeBase, my dedicated server for building software. Designed for redundancy, situational AI training, hosting, debugging, and anything else software design requires."
+    },
+    {
+      "type": "PARAGRAPH",
+      "raw": "The name homeBase is inspired by camelCase, which is a common way in programming to name files or variables in code. It starts with a lowercase letter in the first word, then future words have an uppercase, like: helloThisIsAPhraseWithCamelCase. The actual words homeBase come from the concept of a central location in which one calls \"home\". It's a play on words, but at the same time a logical naming scheme."
+    },
+    {
+      "type": "PARAGRAPH",
+      "raw": "This home server lives about 30 feet under my room, hooked into a 10GB/s ethernet cable, with two backup power capacitors - giving it around 4 hours of performance in the event of a power outage. You may be curious to the specs on this thing:"
+    },
+    {
+      "type": "PARAGRAPH",
+      "raw": "- Ryzen 9 5950X (overclocked)"
+    },
+    {
+      "type": "PARAGRAPH",
+      "raw": "- 128GB DDR4 Memory"
+    },
+    {
+      "type": "PARAGRAPH",
+      "raw": "- 2TB m.2 SSD"
+    },
+    {
+      "type": "PARAGRAPH",
+      "raw": "- 32TB (8 * 4tb) HDD"
+    },
+    {
+      "type": "PARAGRAPH",
+      "raw": "- 3090 GPU"
+    },
+    {
+      "type": "SPACER",
+      "raw": ""
+    },
+    {
+      "type": "PARAGRAPH",
+      "raw": "Yes - it's a beast. This server has saved me well over $280/mo, and has allowed me to have full control over the hosting solution for all of my current and future programs. Currently, it costs just under $10 to host and run this machine (including electricity, downtime, and a few other factors), which compared to the $299 I previously paid, this is a steal."
+    },
+    {
+      "type": "PARAGRAPH",
+      "raw": "The server build was around $3100, which at the time put the build at 10.5 months before break even. Running on Debian 11 Linux, this build has saved me thousands of hours, dollars, and probably single-handedly saved me from huge programmatic problems a few times."
+    },
+    {
+      "type": "PARAGRAPH",
+      "raw": "Now you may ask; where is the AI training in this build? Well, the 3090 is a nice addition to the build, but as you may expect, the server runs other processes outside of AI training; and since it's a linux CLI, it's unable to run any GUI applications for animation such as Spline or Blender."
+    },
+    {
+      "type": "H2",
+      "raw": "III. Trifecta"
+    },
+    {
+      "type": "PARAGRAPH",
+      "raw": "Welcome Trifecta, the third and last of the computer bunch; for now."
+    },
+    {
+      "type": "PARAGRAPH",
+      "raw": "Specs?"
+    },
+    {
+      "type": "PARAGRAPH",
+      "raw": "- 4070 Ti"
+    },
+    {
+      "type": "PARAGRAPH",
+      "raw": "- Ryzen 7 7800X3D"
+    },
+    {
+      "type": "PARAGRAPH",
+      "raw": "- 128GB DDR5 Memory"
+    },
+    {
+      "type": "PARAGRAPH",
+      "raw": "- 1TB m.2 SSD"
+    },
+    {
+      "type": "PARAGRAPH",
+      "raw": "- 16TB (4 * 4tb) HDD"
+    },
+    {
+      "type": "SPACER",
+      "raw": ""
+    },
+    {
+      "type": "PARAGRAPH",
+      "raw": "The word Trifecta is defined as a bet in which a person correctly guesses the order in which three finishers complete a race."
+    },
+    {
+      "type": "PARAGRAPH",
+      "raw": "Now I have three builds at this time; macIntosh, homeBase, and now Trifecta. Trifecta is not a replacement for any of those builds, it has its own purpose and with that, the final major operating system: Windows."
+    },
+    {
+      "type": "PARAGRAPH",
+      "raw": "Why Windows? Well, Linux is amazing when in a CLI environment. Let's not start with GUIs or \"the future is linux\", it's not. MacOS & Hackintosh are possibilities, but realistically don't support the x86 architecture I require for additional feature compatibility. Lastly, Windows will complete the three major operating systems in the collection; macOS, Linux (Debian), and Windows."
+    },
+    {
+      "type": "PARAGRAPH",
+      "raw": "The choice of 4070 Ti with 7800x3d is interesting. From my research, without needing to go as far as a 4090, the 4070 Ti has the best graphical performance due to its 6:6 core build. The 7800x3d also comes with its own dedicated cores for graphical use making it a better choice for some GPU intensive tasks over the 7950x. Interesting..."
+    },
+    {
+      "type": "H2",
+      "raw": "Trifecta Goals"
+    },
+    {
+      "type": "PARAGRAPH",
+      "raw": "Well hypothetically, I would love to run LLAMA-8B or even 70B model, which would be outstanding. I'd also love to look into cloud based computing through Moonlight & Sunlight. These are super clean solutions and replacements for services like GeForce NOW."
+    },
+    {
+      "type": "SPACER",
+      "raw": ""
+    },
+    {
+      "type": "PARAGRAPH",
+      "raw": "**Usque ad rursus.**"
+    }
+  ],
+  "jwk": "12",
+  "note": {
+    "title": "Translation Available",
+    "subtitle": "This blog is also available in Deutsch.",
+    "url": "/de/test"
+  }
+}

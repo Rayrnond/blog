@@ -11,7 +11,9 @@ public enum BContentType {
     H3,
     H4,
     PARAGRAPH,
-    IMAGE;
+    IMAGE,
+    SPACER,
+    ;
 
     public boolean isHeader() {
         return this == H1 || this == H2 || this == H3 || this == H4;
@@ -28,6 +30,9 @@ public enum BContentType {
     }
     public boolean isH4() {
         return this == H4;
+    }
+    public boolean isSpacer() {
+        return this == SPACER;
     }
     public boolean isParagraph() {
         return this == PARAGRAPH;

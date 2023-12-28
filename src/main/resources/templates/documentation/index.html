@@ -12,17 +12,29 @@
         <h1 class="mt-6 text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl" th:text="${markdown.metadata.title}"></h1>
         <time datetime="2022-09-05" class="ml-2 order-first flex items-center text-base text-zinc-400 dark:text-zinc-500">
             <span class="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
-            <span class="ml-3" th:text="${markdown.metadata.getNiceDate()}"></span>
+            <span class="ml-3" th:text="${markdown.metadata.getNiceDate(#locale)}"></span>
         </time>
     </header>
     <div data-mdx-content="true" class="mt-8 max-w-4xl mx-auto">
         <div th:classappend="${content.getType().isHeader() ? 'text-center' : 'text-left'}" th:each="content : *{markdown.getContent()}">
-            <h1 th:if="${content.getType().isH1()}" th:text="${content.getRaw()}" class="mt-6 text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl"></h1>
-            <h2 th:if="${content.getType().isH2()}" th:text="${content.getRaw()}" class="mt-6 text-3xl font-bold tracking-tight text-zinc-800 sm:text-4xl"></h2>
-            <h3 th:if="${content.getType().isH3()}" th:text="${content.getRaw()}" class="mt-6 text-2xl font-bold tracking-tight text-zinc-800 sm:text-3xl"></h3>
-            <h4 th:if="${content.getType().isH4()}" th:text="${content.getRaw()}" class="mt-6 text-xl font-bold tracking-tight text-zinc-800 sm:text-2xl"></h4>
+            <h1 th:if="${content.getType().isH1()}" th:text="${content.getRaw()}" class="mt-20 text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl"></h1>
+            <h2 th:if="${content.getType().isH2()}" th:text="${content.getRaw()}" class="mt-16 text-3xl font-bold tracking-tight text-zinc-800 sm:text-4xl"></h2>
+            <h3 th:if="${content.getType().isH3()}" th:text="${content.getRaw()}" class="mt-12 text-2xl font-bold tracking-tight text-zinc-800 sm:text-3xl"></h3>
+            <h4 th:if="${content.getType().isH4()}" th:text="${content.getRaw()}" class="mt-10 text-xl font-bold tracking-tight text-zinc-800 sm:text-2xl"></h4>
+            <p th:if="${content.getType().isSpacer()}" class="my-8"></p>
             <p th:if="${content.getType().isParagraph()}" th:text="${content.getRaw()}" class="my-2"></p>
             <img width="1310" height="872" decoding="async" data-nimg="1" style="color: transparent;" th:if="${content.getType().isImage()}" th:src="${content.getRaw()}"  class="my-4 rounded-lg">
+        </div>
+    </div>
+    <div th:if="${!markdown.jwk.isEmpty()}" data-mdx-content="true" class="my-8 p-8 max-w-2xl mx-auto bg-gray-100/50 p-4 rounded-lg">
+        <div class="group relative flex gap-x-3 rounded-lg">
+            <div class="mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" class="h-6 w-6 text-gray-600"><path d="M269.4 2.9C265.2 1 260.7 0 256 0s-9.2 1-13.4 2.9L54.3 82.8c-22 9.3-38.4 31-38.3 57.2c.5 99.2 41.3 280.7 213.6 363.2c16.7 8 36.1 8 52.8 0C454.7 420.7 495.5 239.2 496 140c.1-26.2-16.3-47.9-38.3-57.2L269.4 2.9zM312 208c0 22.3-13.1 41.6-32 50.6V328c0 13.3-10.7 24-24 24s-24-10.7-24-24V258.6c-18.9-9-32-28.3-32-50.6c0-30.9 25.1-56 56-56s56 25.1 56 56z"></path></svg>
+            </div>
+            <div>
+                <a href="#" class="font-semibold text-gray-900">Cryptographically Verified</a>
+                <p class="text-gray-600">Identification of legitimate published material is provided via cryptographically signed keys. Do not trust posed material without first verifying keys. Your client has automatically authenticated this post.</p>
+                <a href="#" class="font-semibold text-gray-900">See JWK • Verification Steps</a></div>
         </div>
     </div>
     <div data-mdx-content="true" class="my-8 p-8 max-w-2xl mx-auto bg-gray-100/50 p-4 rounded-lg">
